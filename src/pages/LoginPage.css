@@ -1,0 +1,18 @@
+.login-page-container {
+    height: 100vh;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .login-links {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .login-links a {
+    color: skyblue;
+    text-decoration: none;
+  }
