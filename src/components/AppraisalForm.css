@@ -1,0 +1,29 @@
+/* src/styles/AppraisalForm.css */
+.appraisal-form {
+    padding: 1rem;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    resize: vertical;
+  }
+  
+
+  .button{
+    border: 1px solid black;
+    border-radius: 10px;    
+    background-color: skyblue;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 1rem;
+  }
+  

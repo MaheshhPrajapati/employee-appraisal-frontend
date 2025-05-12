@@ -1,0 +1,39 @@
+/* src/pages/DashboardPage.css */
+.dashboard-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: skyblue;
+    color: white;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .dashboard-title {
+    font-size: 1.2rem;
+  }
+  
+  .dashboard-user {
+    font-size: 1rem;
+  }
+  
+  .dashboard-content {
+    padding: 2rem;
+  }
+  
+  .appraisal-button{
+    border: 1px solid black;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+    
+    background-color: skyblue;
+    color: white;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 1rem;
+  }
