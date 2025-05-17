@@ -5,12 +5,12 @@ import './AppraisalForm.css';
 
 const AppraisalForm: React.FC = () => {
     const [formData, setFormData] = useState({
-        goalAchievement: '',
-        teamwork: '',
-        communication: '',
-        punctuality: '',
-        innovation: '',
-        leadership: '',
+        GoalAchievement: '',
+        Teamwork: '',
+        Communication: '',
+        Punctuality: '',
+        Innovation: '',
+        Leadership: '',
     });
 
     const [showModal, setShowModal] = useState(false);
@@ -25,7 +25,7 @@ const AppraisalForm: React.FC = () => {
             <form>
                 {Object.keys(formData).map((key) => (
                     <div className="form-group" key={key}>
-                        <label>{key.replace(/([A-Z])/g, ' $1')}</label>
+                        <label className='label'>{key.replace(/([A-Z])/g, ' $1')}</label>
                         <textarea name={key} value={formData[key as keyof typeof formData]} onChange={handleChange} />
                     </div>
                 ))}

@@ -9,7 +9,8 @@ interface User {
 }
 
 const DashboardPage: React.FC = () => {
-  const navigate = useNavigate(); const [user, setUser] = useState<User | null>(null);
+  const navigate = useNavigate(); 
+  const [user, setUser] = useState<User | null>(null);
 
   useEffect(() => {
     // Replace with your actual API call logic

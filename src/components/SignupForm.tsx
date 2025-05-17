@@ -50,7 +50,7 @@ const SignupForm: React.FC<SignupFormProps> = ({ onSignup }) => {
 
             <div className="form-group">
                 <label>Password</label>
-                <div className="password-container">
+                <div className="password-container password-ctn">
                     <input
                         type={passwordVisible ? 'text' : 'password'}
                         value={password}
@@ -68,7 +68,7 @@ const SignupForm: React.FC<SignupFormProps> = ({ onSignup }) => {
 
             <div className="form-group">
                 <label>Confirm Password</label>
-                <div className="password-container">
+                <div className="password-container password-ctn">
                     <input
                         type={confirmPasswordVisible ? 'text' : 'password'}
                         value={confirmPassword}

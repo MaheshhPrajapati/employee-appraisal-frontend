@@ -1,18 +1,9 @@
+/* Background */
 .login-page-container {
-    height: 100vh;
-    background-color: skyblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-
-  .login-links {
-    margin-top: 1rem;
-    text-align: center;
-  }
-  
-  .login-links a {
-    color: skyblue;
-    text-decoration: none;
-  }
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px; /* enables 3D effect */
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './LoginForm.css';
+import { useNavigate } from 'react-router-dom';
 
 interface LoginFormProps {
     onLogin: (email: string, password: string) => void;
@@ -9,6 +10,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [passwordVisible, setPasswordVisible] = useState(false);
+    const navigate = useNavigate();
 
 
     const handleSubmit = (e: React.FormEvent) => {
@@ -32,12 +34,13 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
 
             <div className="form-group">
                 <label>Password</label>
-                <div className="password-container">
+                <div className="password-container password-ctn">
                     <input
                         type={passwordVisible ? 'text' : 'password'}
                         value={password}
                         required
                         onChange={(e) => setPassword(e.target.value)}
+                         
                     />
                     <span
                         className="eye-icon"
@@ -55,7 +58,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
             <div className="login-links">
                 <a href="/account/signup">Don't have an account? Sign up</a>
                 <br />
-                <a href="#">Forgot password?</a> {/* placeholder for now */}
+                <a className='link' onClick={() => {navigate('/account/forgotPassword')}}>Forgot password?</a> {/* placeholder for now */}
             </div>
         </form>
     );
