@@ -1,39 +1,72 @@
-/* src/pages/DashboardPage.css */
+/* Dark Theme for Dashboard Navbar */
 .dashboard-navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: skyblue;
-    color: white;
-    padding: 1rem 2rem;
-    font-weight: bold;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f1f1f; /* Dark background for navbar */
+  color: white; /* Light text */
+  padding: 1rem 2rem;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Darker shadow */
+}
+
+.dashboard-title {
+  font-size: 1.2rem;
+}
+
+.dashboard-user {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Dark Background for the Dashboard Content */
+.dashboard-content {
+  background: rgba(0, 0, 0, 0.8); /* Dark background with slight transparency */
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6); /* Darker shadow */
+  color: #f0f0f0; /* Light text color */
+  height: 80vh;
+}
+
+/* Appraisal Button Styling */
+.appraisal-button {
+  border: none; /* Remove border */
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+  margin-top: 20px;
+  margin-right: 20px;
   
-  .dashboard-title {
-    font-size: 1.2rem;
+  background-color: #007e33; /* Dark green background */
+  background: linear-gradient(90deg, #00c851, #007e33); /* Gradient effect */
+  color: white;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease; /* Add transition for smooth effect */
+}
+
+.appraisal-button:hover {
+  transform: scale(1.05); /* Slight scale effect on hover */
+  background: linear-gradient(90deg, #007e33, #00c851); /* Reverse gradient on hover */
+}
+
+/* Responsive Design (for smaller screens) */
+@media (max-width: 768px) {
+  .dashboard-navbar {
+    flex-direction: column;
+    text-align: center;
   }
-  
-  .dashboard-user {
-    font-size: 1rem;
+
+  .appraisal-button {
+    width: 100%;
+    padding: 1rem;
   }
-  
+
   .dashboard-content {
-    padding: 2rem;
+    padding: 1rem;
   }
-  
-  .appraisal-button{
-    border: 1px solid black;
-    border-radius: 10px;
-    position: absolute;
-    right: 0;
-    margin-top: 20px;
-    margin-right: 20px;
-    
-    background-color: skyblue;
-    color: white;
-    padding: 1rem 2rem;
-    font-weight: bold;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    font-size: 1rem;
-  }
+}
