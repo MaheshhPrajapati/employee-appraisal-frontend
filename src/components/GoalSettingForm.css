@@ -1,6 +1,6 @@
 /* src/styles/AppraisalForm.css */
 
-.appraisal-form {
+.goal-setting-form {
     background: black;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     padding: 2rem;
@@ -10,7 +10,7 @@
     color: #f0f0f0;
   }
   
-  .appraisal-form h2 {
+  .goal-setting-form h2 {
     text-align: center;
     font-size: 1.8rem;
     color: #ffffff;

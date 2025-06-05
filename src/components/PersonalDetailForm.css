@@ -1,16 +1,24 @@
 /* src/styles/AppraisalForm.css */
 
-.appraisal-form {
+.personal-details-form {
     background: black;
+    backdrop-filter: blur(12px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     padding: 2rem;
     border-radius: 20px;
     max-width: 700px;
     margin: 3rem auto;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
     color: #f0f0f0;
   }
   
-  .appraisal-form h2 {
+  .appraisal-form:hover {
+    transform: rotateY(4deg) rotateX(4deg);
+  }
+
+  
+  .personal-details-form h2 {
     text-align: center;
     font-size: 1.8rem;
     color: #ffffff;
