@@ -9,7 +9,33 @@
     transition: transform 0.3s ease;
     color: #f0f0f0;
   }
-  
+  .radio-group {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.radio-item input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+  .side{
+    display: inline;
+    background: #000;
+    display: flex;
+  }
   .login-form:hover {
     transform: rotateY(5deg) rotateX(5deg);
   }

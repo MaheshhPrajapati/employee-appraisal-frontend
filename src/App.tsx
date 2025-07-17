@@ -5,6 +5,7 @@ import SignupPage from './pages/SignupPage';
 import DashboardPage from './pages/DashboardPage';
 import EmployeeDashboard from './pages/EmployeeDashboard';
 import ForgotPasswordPage from './pages/ForgotPasswordPage';
+import ManagerReview from './ManagerReview';
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
         <Route path="/backend/dashboard" element={<DashboardPage />} />
         <Route path="/backend/employeeDashboard" element={<EmployeeDashboard />} />
         <Route path="/account/forgotPassword" element={<ForgotPasswordPage />} />
+        <Route path="/backend/managerReview" element={<ManagerReview />} />
 
       </Routes>
     </Router>

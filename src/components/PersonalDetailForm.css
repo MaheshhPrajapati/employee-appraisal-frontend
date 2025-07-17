@@ -1,4 +1,4 @@
-/* src/styles/AppraisalForm.css */
+
 
 .personal-details-form {
     background: black;
@@ -13,10 +13,16 @@
     color: #f0f0f0;
   }
   
-  .appraisal-form:hover {
-    transform: rotateY(4deg) rotateX(4deg);
-  }
+  
 
+  .dropdown {
+    width: 100%;
+    height: 30px;
+    border: solid rgb(22, 22, 22);
+    background-color: rgb(44, 42, 42);
+    border-radius: 5px;
+    color: white;
+  }
   
   .personal-details-form h2 {
     text-align: center;

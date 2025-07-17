@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1f1f1f; /* Dark background for navbar */
+  /*background-color: #1f1f1f; */
   color: white; /* Light text */
   padding: 1rem 2rem;
   font-weight: bold;
@@ -22,7 +22,7 @@
 
 /* Dark Background for the Dashboard Content */
 .dashboard-content {
-  background: rgba(0, 0, 0, 0.8); /* Dark background with slight transparency */
+  /* background: rgba(0, 0, 0, 0.8);  */
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6); /* Darker shadow */
@@ -47,6 +47,58 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   font-size: 1rem;
   transition: background 0.3s ease, transform 0.2s ease; /* Add transition for smooth effect */
+  cursor: pointer;
+}
+
+.appraisal-button-left {
+  border: none; /* Remove border */
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+  margin-top: 20px;
+  margin-right: 250px;
+  
+  background-color: #007e33; /* Dark green background */
+  background: linear-gradient(90deg, #00c851, #007e33); /* Gradient effect */
+  color: white;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease; /* Add transition for smooth effect */
+  cursor: pointer;
+}
+
+.logout{
+  width: 100px !important;
+}
+
+.dropDown{
+  border: none; /* Remove border */
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+  margin-top: 20px;
+  margin-right: 480px;
+  width: 200px;  
+  background-color: #007e33; /* Dark green background */
+  background: #0c140f; /* Gradient effect */
+  color: white;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease; /* Add transition for smooth effect */
+  cursor: pointer;
+}
+
+.dropDown:hover{
+  transform: scale(1.05);
+}
+
+.appraisal-button-left:hover {
+  transform: scale(1.05); /* Slight scale effect on hover */
+  background: linear-gradient(90deg, #007e33, #00c851); /* Reverse gradient on hover */
 }
 
 .appraisal-button:hover {
@@ -69,4 +121,11 @@
   .dashboard-content {
     padding: 1rem;
   }
+}
+
+.globe-container {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  margin: auto;
 }

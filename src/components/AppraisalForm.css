@@ -17,6 +17,15 @@
     margin-bottom: 2rem;
   }
   
+   .dropdown {
+    height: 30px;
+    margin-right: 0px;
+    border: solid rgb(22, 22, 22);
+    background-color: rgb(44, 42, 42);
+    border-radius: 5px;
+    color: white;
+  }
+  
   .form-group {
     margin-bottom: 1.5rem;
     display: flex;
